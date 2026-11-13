@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "tables": {
+    "policies": {
+      "file": "boundary-policies.jsonl",
+      "sha256": "0440d4235f30b2ae6f852b475fafcb4a1dafc06fb5256581b3615c340b7fee10",
+      "bytes": 140,
+      "rows": 2,
+      "fields": [
+        "id",
+        "cutoff",
+        "eligible_above",
+        "inclusive"
+      ]
+    },
+    "applications": {
+      "file": "boundary-applications.jsonl",
+      "sha256": "ee220e6955eb4556e924d184c324b36f82b97f74a05295117177477602ef861c",
+      "bytes": 650,
+      "rows": 5,
+      "fields": [
+        "id",
+        "firm",
+        "batch",
+        "score",
+        "received",
+        "baseline",
+        "outcome",
+        "outcome_known_day"
+      ]
+    },
+    "score_revisions": {
+      "file": "boundary-score_revisions.jsonl",
+      "sha256": "65b7de3d41fed86033b08906081c007ac1471495f0fd30a334fbf4b81fc7ccf7",
+      "bytes": 69,
+      "rows": 1,
+      "fields": [
+        "id",
+        "application",
+        "new_score",
+        "known_day"
+      ]
+    }
+  }
+}

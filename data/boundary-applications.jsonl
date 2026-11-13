@@ -1,0 +1,5 @@
+{"baseline": 10, "batch": "b1", "firm": "f0", "id": "a0", "outcome": 11, "outcome_known_day": 90, "received": false, "score": 58}
+{"baseline": 11, "batch": "b1", "firm": "f1", "id": "a1", "outcome": 13, "outcome_known_day": 90, "received": false, "score": 59}
+{"baseline": 12, "batch": "b1", "firm": "f2", "id": "a2", "outcome": 17, "outcome_known_day": 90, "received": false, "score": 60}
+{"baseline": 13, "batch": "b1", "firm": "f3", "id": "a3", "outcome": 15, "outcome_known_day": 90, "received": false, "score": 61}
+{"baseline": 14, "batch": "b1", "firm": "f4", "id": "a4", "outcome": 19, "outcome_known_day": 90, "received": false, "score": 62}
