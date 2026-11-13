@@ -1,0 +1,10 @@
+{"application": "a0", "firm": "f0", "batch": "b1", "distance": -2, "eligible": false, "weighting": "uniform", "weight": 1.0, "received": false}
+{"application": "a1", "firm": "f1", "batch": "b1", "distance": -1, "eligible": false, "weighting": "uniform", "weight": 1.0, "received": false}
+{"application": "a2", "firm": "f2", "batch": "b1", "distance": 0, "eligible": true, "weighting": "uniform", "weight": 1.0, "received": false}
+{"application": "a3", "firm": "f3", "batch": "b1", "distance": 1, "eligible": true, "weighting": "uniform", "weight": 1.0, "received": false}
+{"application": "a4", "firm": "f4", "batch": "b1", "distance": 2, "eligible": true, "weighting": "uniform", "weight": 1.0, "received": false}
+{"application": "a0", "firm": "f0", "batch": "b1", "distance": -2, "eligible": false, "weighting": "triangular", "weight": 1e-06, "received": false}
+{"application": "a1", "firm": "f1", "batch": "b1", "distance": -1, "eligible": false, "weighting": "triangular", "weight": 0.5, "received": false}
+{"application": "a2", "firm": "f2", "batch": "b1", "distance": 0, "eligible": true, "weighting": "triangular", "weight": 1.0, "received": false}
+{"application": "a3", "firm": "f3", "batch": "b1", "distance": 1, "eligible": true, "weighting": "triangular", "weight": 0.5, "received": false}
+{"application": "a4", "firm": "f4", "batch": "b1", "distance": 2, "eligible": true, "weighting": "triangular", "weight": 1e-06, "received": false}

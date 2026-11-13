@@ -1,0 +1,80 @@
+{
+  "path": "fisher_randomization",
+  "randomization": {
+    "status": "weak_first_stage",
+    "primary_window_k": 1,
+    "window_selector": "narrowest nested window with baseline balance (covariate-only, outcome never inspected)",
+    "windows_failing_balance": [],
+    "primary": {
+      "k": 1,
+      "n": 3,
+      "n_treated": 2,
+      "method": "exact",
+      "outcome_diff": 3.0,
+      "outcome_p": 0.6666666666666666,
+      "outcome_ci95": [
+        0.0,
+        6.0
+      ],
+      "baseline_diff": 1.5,
+      "baseline_p": 0.6666666666666666,
+      "baseline_balanced": true,
+      "takeup_diff": 0.5,
+      "takeup_p": 1.0,
+      "takeup_ci95": [
+        -0.44999999999999996,
+        1.45
+      ],
+      "first_stage_detected": false
+    },
+    "windows": [
+      {
+        "k": 1,
+        "n": 3,
+        "n_treated": 2,
+        "method": "exact",
+        "outcome_diff": 3.0,
+        "outcome_p": 0.6666666666666666,
+        "outcome_ci95": [
+          0.0,
+          6.0
+        ],
+        "baseline_diff": 1.5,
+        "baseline_p": 0.6666666666666666,
+        "baseline_balanced": true,
+        "takeup_diff": 0.5,
+        "takeup_p": 1.0,
+        "takeup_ci95": [
+          -0.44999999999999996,
+          1.45
+        ],
+        "first_stage_detected": false
+      },
+      {
+        "k": 2,
+        "n": 5,
+        "n_treated": 3,
+        "method": "exact",
+        "outcome_diff": 5.0,
+        "outcome_p": 0.1,
+        "outcome_ci95": [
+          3.552713678800501e-15,
+          9.999999999999996
+        ],
+        "baseline_diff": 2.5,
+        "baseline_p": 0.2,
+        "baseline_balanced": true,
+        "takeup_diff": 0.6666666666666666,
+        "takeup_p": 0.4,
+        "takeup_ci95": [
+          -0.18333333333333302,
+          1.5166666666666662
+        ],
+        "first_stage_detected": false
+      }
+    ],
+    "late": null,
+    "late_note": "第一阶段在随机化检验下不显著，离散小样本没有可靠的比值推断，停止报告 LATE"
+  },
+  "continuous": null
+}

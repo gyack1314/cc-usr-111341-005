@@ -1,0 +1,9 @@
+half_width,weighting,donut_cells,donut_removed,n,status,itt,itt_p,fs_jump,fs_f,late_ratio,late_status
+1,uniform,0,,3,not_identifiable,,,,,,
+1,uniform,1,-1|0,1,not_identifiable,,,,,,
+1,triangular,0,,3,not_identifiable,,,,,,
+1,triangular,1,-1|0,1,not_identifiable,,,,,,
+2,uniform,0,,5,ok,1.000000000000004,0.7000836841076244,0.6666666666666657,0.6857142857142845,1.500000000000008,weak_first_stage
+2,uniform,1,-1|0,3,not_identifiable,,,,,,
+2,triangular,0,,5,ok,1.9999940079705325,4.859786085930285e-20,0.9999980000200416,25000599970.297512,1.9999980079264652,ok
+2,triangular,1,-1|0,3,not_identifiable,,,,,,

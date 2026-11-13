@@ -1,0 +1,238 @@
+{
+  "cells": [
+    {
+      "distance": -2,
+      "eligible": false,
+      "n": 1,
+      "received": 0,
+      "outcome_sum": 11.0,
+      "baseline_sum": 10.0,
+      "outcome_mean": 11.0,
+      "baseline_mean": 10.0,
+      "takeup_rate": 0.0
+    },
+    {
+      "distance": -1,
+      "eligible": false,
+      "n": 1,
+      "received": 0,
+      "outcome_sum": 13.0,
+      "baseline_sum": 11.0,
+      "outcome_mean": 13.0,
+      "baseline_mean": 11.0,
+      "takeup_rate": 0.0
+    },
+    {
+      "distance": 0,
+      "eligible": true,
+      "n": 1,
+      "received": 1,
+      "outcome_sum": 17.0,
+      "baseline_sum": 12.0,
+      "outcome_mean": 17.0,
+      "baseline_mean": 12.0,
+      "takeup_rate": 1.0
+    },
+    {
+      "distance": 1,
+      "eligible": true,
+      "n": 1,
+      "received": 0,
+      "outcome_sum": 15.0,
+      "baseline_sum": 13.0,
+      "outcome_mean": 15.0,
+      "baseline_mean": 13.0,
+      "takeup_rate": 0.0
+    },
+    {
+      "distance": 2,
+      "eligible": true,
+      "n": 1,
+      "received": 1,
+      "outcome_sum": 19.0,
+      "baseline_sum": 14.0,
+      "outcome_mean": 19.0,
+      "baseline_mean": 14.0,
+      "takeup_rate": 1.0
+    }
+  ],
+  "bunching": [
+    {
+      "half_width": 1,
+      "left_n": 1,
+      "right_n": 2,
+      "boundary_cell_n": 1,
+      "fisher_p": 0.9999999999999999,
+      "table": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "flag": false
+    },
+    {
+      "half_width": 2,
+      "left_n": 2,
+      "right_n": 3,
+      "boundary_cell_n": 1,
+      "fisher_p": 1.0,
+      "table": [
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "flag": false
+    }
+  ],
+  "baseline": [
+    {
+      "half_width": 1,
+      "baseline_jump": 1.4999999999999998,
+      "se": 0.6123724356957945,
+      "p_value": 0.13397459621555866,
+      "ci95": [
+        -1.134825937727508,
+        4.134825937727507
+      ],
+      "flag": false,
+      "status": "ok"
+    },
+    {
+      "half_width": 2,
+      "baseline_jump": 0.0,
+      "se": 0.0,
+      "p_value": NaN,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "flag": false,
+      "status": "ok"
+    }
+  ],
+  "scarcity": [
+    {
+      "half_width": 1,
+      "n": 3,
+      "left_n": 1,
+      "right_n": 2,
+      "firms": 3,
+      "distinct_cells": 3,
+      "mean_per_cell": 1.0,
+      "sparse": true,
+      "min_per_side_threshold": 5
+    },
+    {
+      "half_width": 2,
+      "n": 5,
+      "left_n": 2,
+      "right_n": 3,
+      "firms": 5,
+      "distinct_cells": 5,
+      "mean_per_cell": 1.0,
+      "sparse": true,
+      "min_per_side_threshold": 5
+    }
+  ],
+  "first_stage": [
+    {
+      "half_width": 1,
+      "jump": 0.5,
+      "se": 0.6123724356957945,
+      "f_stat": 0.6666666666666669,
+      "f_p_value": 0.5640942168489786,
+      "takeup_left": 0.0,
+      "takeup_right": 0.5,
+      "weak": true,
+      "wrong_signed": false
+    },
+    {
+      "half_width": 1,
+      "jump": 0.9999989999100993,
+      "se": 2.4494848439534404e-06,
+      "f_stat": 166666999950.48813,
+      "f_p_value": 1.5593920433045923e-06,
+      "takeup_left": 0.0,
+      "takeup_right": 0.5,
+      "weak": false,
+      "wrong_signed": false
+    },
+    {
+      "half_width": 2,
+      "jump": 0.6666666666666657,
+      "se": 0.8050764858994128,
+      "f_stat": 0.6857142857142845,
+      "f_p_value": 0.4683512830837332,
+      "takeup_left": 0.0,
+      "takeup_right": 0.6666666666666666,
+      "weak": true,
+      "wrong_signed": false
+    },
+    {
+      "half_width": 2,
+      "jump": 0.9999980000200416,
+      "se": 6.324466781963847e-06,
+      "f_stat": 25000599970.297512,
+      "f_p_value": 5.578855327214785e-16,
+      "takeup_left": 0.0,
+      "takeup_right": 0.6666666666666666,
+      "weak": false,
+      "wrong_signed": false
+    }
+  ],
+  "placebo": {
+    "shifts": [
+      {
+        "status": "not_identifiable",
+        "shift": -2
+      },
+      {
+        "estimate": 3.999996000008004,
+        "se": 9.79791977485738e-06,
+        "t": 408249.5153994286,
+        "p_value": 5.999963994502803e-12,
+        "ci95": [
+          3.9999538429616486,
+          4.00003815705436
+        ],
+        "n": 3,
+        "clusters": 3,
+        "half_width": 2,
+        "weighting": "triangular",
+        "batches": [
+          "b1"
+        ],
+        "df": 2,
+        "bootstrap_p": NaN,
+        "bootstrap_ci95": [
+          NaN,
+          NaN
+        ],
+        "bootstrap_reps": 0,
+        "shift": 2,
+        "status": "ok"
+      }
+    ],
+    "significant_placebo_count": 1,
+    "note": "多个伪阈值显著意味着跳跃未必来自资格规则"
+  },
+  "window_grid": [
+    1,
+    2
+  ],
+  "weightings": [
+    "uniform",
+    "triangular"
+  ],
+  "assumption_note": "未发现密度或基线不连续，仅表示现有数据未证伪；精确操纵不存在、排除限制与单调性均无法被证明。"
+}

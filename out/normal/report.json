@@ -1,0 +1,367 @@
+{
+  "package_path": "fisher_randomization",
+  "sample": {
+    "primary_n": 5,
+    "auxiliary_n": 0,
+    "not_visible_n": 0,
+    "horizon_days": 90,
+    "firms": 5
+  },
+  "support": {
+    "discrete_support": true,
+    "unique_count": 5,
+    "tie_fraction": 0.0,
+    "boundary_cell_n": 1,
+    "boundary_cell_share": 0.2,
+    "left_unique_n": 2,
+    "right_unique_n": 3,
+    "reasons": [
+      "阈值距离仅 5 个不同取值（<= 10），评分明显离散"
+    ],
+    "point_counts": {
+      "-2": 1,
+      "-1": 1,
+      "0": 1,
+      "1": 1,
+      "2": 1
+    }
+  },
+  "frozen_score_audit": {
+    "post_publication_revision_flips": 1,
+    "rule": "历史资格只使用公布前冻结的连续评分，修订分仅审计不覆盖"
+  },
+  "diagnostics": {
+    "bunching": {
+      "half_width": 2,
+      "left_n": 2,
+      "right_n": 3,
+      "boundary_cell_n": 1,
+      "fisher_p": 1.0,
+      "table": [
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "flag": false
+    },
+    "baseline_continuity": {
+      "half_width": 2,
+      "baseline_jump": 0.0,
+      "se": 0.0,
+      "p_value": NaN,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "flag": false,
+      "status": "ok"
+    },
+    "scarcity": {
+      "half_width": 2,
+      "n": 5,
+      "left_n": 2,
+      "right_n": 3,
+      "firms": 5,
+      "distinct_cells": 5,
+      "mean_per_cell": 1.0,
+      "sparse": true,
+      "min_per_side_threshold": 5
+    },
+    "first_stage": {
+      "half_width": 2,
+      "jump": 0.9999980000200416,
+      "se": 6.324466781963847e-06,
+      "f_stat": 25000599970.297512,
+      "f_p_value": 5.578855327214785e-16,
+      "takeup_left": 0.0,
+      "takeup_right": 0.6666666666666666,
+      "weak": false,
+      "wrong_signed": false
+    },
+    "placebo": {
+      "significant_placebo_count": 1,
+      "note": "多个伪阈值显著意味着跳跃未必来自资格规则"
+    },
+    "assumption_note": "未发现密度或基线不连续，仅表示现有数据未证伪；精确操纵不存在、排除限制与单调性均无法被证明。"
+  },
+  "sensitivity_grid_size": 8,
+  "sensitivity": [
+    {
+      "half_width": 1,
+      "weighting": "uniform",
+      "donut_cells": 0,
+      "donut_removed": [],
+      "status": "not_identifiable",
+      "n": 3
+    },
+    {
+      "half_width": 1,
+      "weighting": "uniform",
+      "donut_cells": 1,
+      "donut_removed": [
+        -1,
+        0
+      ],
+      "status": "not_identifiable",
+      "n": 1
+    },
+    {
+      "half_width": 1,
+      "weighting": "triangular",
+      "donut_cells": 0,
+      "donut_removed": [],
+      "status": "not_identifiable",
+      "n": 3
+    },
+    {
+      "half_width": 1,
+      "weighting": "triangular",
+      "donut_cells": 1,
+      "donut_removed": [
+        -1,
+        0
+      ],
+      "status": "not_identifiable",
+      "n": 1
+    },
+    {
+      "itt": {
+        "estimate": 1.000000000000004,
+        "se": 2.41522945769824,
+        "t": 0.41403933560541417,
+        "p_value": 0.7000836841076244,
+        "ci95": [
+          -5.705752024895691,
+          7.705752024895698
+        ],
+        "n": 5,
+        "clusters": 5,
+        "half_width": 2,
+        "weighting": "uniform",
+        "batches": [
+          "b1"
+        ],
+        "df": 4,
+        "bootstrap_p": NaN,
+        "bootstrap_ci95": [
+          NaN,
+          NaN
+        ],
+        "bootstrap_reps": 0
+      },
+      "first_stage": {
+        "estimate": 0.6666666666666657,
+        "se": 0.8050764858994128,
+        "t": 0.8280786712108243,
+        "p_value": 0.4541721310116307,
+        "ci95": [
+          -1.568584008298565,
+          2.901917341631896
+        ],
+        "n": 5,
+        "clusters": 5,
+        "half_width": 2,
+        "weighting": "uniform",
+        "batches": [
+          "b1"
+        ],
+        "df": 4,
+        "bootstrap_p": NaN,
+        "bootstrap_ci95": [
+          NaN,
+          NaN
+        ],
+        "bootstrap_reps": 0,
+        "f_stat": 0.6857142857142845,
+        "f_p_value": 0.4683512830837332,
+        "takeup_left": 0.0,
+        "takeup_right": 0.6666666666666666
+      },
+      "late_ratio": 1.500000000000008,
+      "late_status": "weak_first_stage",
+      "weak_first_stage": true,
+      "wrong_signed_first_stage": false,
+      "half_width": 2,
+      "weighting": "uniform",
+      "n": 5,
+      "status": "ok",
+      "donut_cells": 0,
+      "donut_removed": []
+    },
+    {
+      "half_width": 2,
+      "weighting": "uniform",
+      "donut_cells": 1,
+      "donut_removed": [
+        -1,
+        0
+      ],
+      "status": "not_identifiable",
+      "n": 3
+    },
+    {
+      "itt": {
+        "estimate": 1.9999940079705325,
+        "se": 1.8973400333034307e-05,
+        "t": 105410.41525848018,
+        "p_value": 4.859786085930285e-20,
+        "ci95": [
+          1.9999413293658985,
+          2.0000466865751663
+        ],
+        "n": 5,
+        "clusters": 5,
+        "half_width": 2,
+        "weighting": "triangular",
+        "batches": [
+          "b1"
+        ],
+        "df": 4,
+        "bootstrap_p": NaN,
+        "bootstrap_ci95": [
+          NaN,
+          NaN
+        ],
+        "bootstrap_reps": 0
+      },
+      "first_stage": {
+        "estimate": 0.9999980000200416,
+        "se": 6.324466781963847e-06,
+        "t": 158115.7802697046,
+        "p_value": 9.599539236838306e-21,
+        "ci95": [
+          0.9999804404851517,
+          1.0000155595549314
+        ],
+        "n": 5,
+        "clusters": 5,
+        "half_width": 2,
+        "weighting": "triangular",
+        "batches": [
+          "b1"
+        ],
+        "df": 4,
+        "bootstrap_p": NaN,
+        "bootstrap_ci95": [
+          NaN,
+          NaN
+        ],
+        "bootstrap_reps": 0,
+        "f_stat": 25000599970.297512,
+        "f_p_value": 5.578855327214785e-16,
+        "takeup_left": 0.0,
+        "takeup_right": 0.6666666666666666
+      },
+      "late_ratio": 1.9999980079264652,
+      "late_status": "ok",
+      "weak_first_stage": false,
+      "wrong_signed_first_stage": false,
+      "half_width": 2,
+      "weighting": "triangular",
+      "n": 5,
+      "status": "ok",
+      "donut_cells": 0,
+      "donut_removed": []
+    },
+    {
+      "half_width": 2,
+      "weighting": "triangular",
+      "donut_cells": 1,
+      "donut_removed": [
+        -1,
+        0
+      ],
+      "status": "not_identifiable",
+      "n": 3
+    }
+  ],
+  "randomization": {
+    "status": "weak_first_stage",
+    "primary_window_k": 1,
+    "window_selector": "narrowest nested window with baseline balance (covariate-only, outcome never inspected)",
+    "windows_failing_balance": [],
+    "primary": {
+      "k": 1,
+      "n": 3,
+      "n_treated": 2,
+      "method": "exact",
+      "outcome_diff": 3.0,
+      "outcome_p": 0.6666666666666666,
+      "outcome_ci95": [
+        0.0,
+        6.0
+      ],
+      "baseline_diff": 1.5,
+      "baseline_p": 0.6666666666666666,
+      "baseline_balanced": true,
+      "takeup_diff": 0.5,
+      "takeup_p": 1.0,
+      "takeup_ci95": [
+        -0.44999999999999996,
+        1.45
+      ],
+      "first_stage_detected": false
+    },
+    "windows": [
+      {
+        "k": 1,
+        "n": 3,
+        "n_treated": 2,
+        "method": "exact",
+        "outcome_diff": 3.0,
+        "outcome_p": 0.6666666666666666,
+        "outcome_ci95": [
+          0.0,
+          6.0
+        ],
+        "baseline_diff": 1.5,
+        "baseline_p": 0.6666666666666666,
+        "baseline_balanced": true,
+        "takeup_diff": 0.5,
+        "takeup_p": 1.0,
+        "takeup_ci95": [
+          -0.44999999999999996,
+          1.45
+        ],
+        "first_stage_detected": false
+      },
+      {
+        "k": 2,
+        "n": 5,
+        "n_treated": 3,
+        "method": "exact",
+        "outcome_diff": 5.0,
+        "outcome_p": 0.1,
+        "outcome_ci95": [
+          3.552713678800501e-15,
+          9.999999999999996
+        ],
+        "baseline_diff": 2.5,
+        "baseline_p": 0.2,
+        "baseline_balanced": true,
+        "takeup_diff": 0.6666666666666666,
+        "takeup_p": 0.4,
+        "takeup_ci95": [
+          -0.18333333333333302,
+          1.5166666666666662
+        ],
+        "first_stage_detected": false
+      }
+    ],
+    "late": null,
+    "late_note": "第一阶段在随机化检验下不显著，离散小样本没有可靠的比值推断，停止报告 LATE"
+  },
+  "continuous_estimates": null,
+  "scope_and_limits": [
+    "估计仅适用于阈值附近的局部合规企业（compliers），不能外推到远离阈值的企业，因此不能单独回答“扩围”的整体效果问题。",
+    "诊断未报警只表示现有数据未证伪密度连续与基线连续；精确操纵不存在、排除限制与单调性本身不可由这些数据证明。",
+    "阈值距离归一仅用于对齐方向，批次间政策强度异质被保留，未拼成单一处理强度曲线。",
+    "评分离散，结论基于局部随机化置换推断而非连续 RDD；窗口按基线平衡预选择，未使用结果信息。",
+    "第一阶段在随机化检验下不跳跃，停止报告 LATE，只保留 ITT 与领取率证据。"
+  ]
+}

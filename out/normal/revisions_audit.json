@@ -1,0 +1,40 @@
+{
+  "a0": {
+    "revision_count": 1,
+    "post_publication_count": 1,
+    "post_publication_flip": true,
+    "details": [
+      {
+        "revision": "v1",
+        "known_day": 120,
+        "new_score": 61,
+        "post_publication": true,
+        "would_change_eligibility": true
+      }
+    ]
+  },
+  "a1": {
+    "revision_count": 0,
+    "post_publication_count": 0,
+    "post_publication_flip": false,
+    "details": []
+  },
+  "a2": {
+    "revision_count": 0,
+    "post_publication_count": 0,
+    "post_publication_flip": false,
+    "details": []
+  },
+  "a3": {
+    "revision_count": 0,
+    "post_publication_count": 0,
+    "post_publication_flip": false,
+    "details": []
+  },
+  "a4": {
+    "revision_count": 0,
+    "post_publication_count": 0,
+    "post_publication_flip": false,
+    "details": []
+  }
+}
