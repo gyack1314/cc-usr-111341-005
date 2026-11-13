@@ -10,4 +10,6 @@ coverage/
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# 分析产物
 out/

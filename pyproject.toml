@@ -1,5 +1,9 @@
 [project]
 name = "threshold-data"
-version = "0.1.0"
+version = "0.2.0"
+description = "资格阈值附近的数字化扶持效果识别：模糊断点诊断、Fisher 随机化推断与局部 LATE"
 requires-python = ">=3.11"
 dependencies = []
+
+[tool.unittest]
+start-dir = "tests"
